@@ -1,13 +1,15 @@
 .header {
+  margin-top: 180px;
 
   h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
-    width: 560px;
+    // width: 600px;
     text-align: center;
+    letter-spacing: 0.1rem;
     color: whitesmoke;
-    margin: 250px auto 50px;
+    margin: 0 auto 30px;
   }
 
   h2 {
@@ -15,6 +17,17 @@
     margin: 30px 10%;
     font-size: 1rem;
     font-weight: 100;
+    text-align: center;
+  }
+
+  .logo {
+    height: 30px;
+    width: 30px;
+    background: url(../../assets/icons/arrow-down.svg) center/cover;
+    margin: 50px auto;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    padding: 30px;
   }
 
 }

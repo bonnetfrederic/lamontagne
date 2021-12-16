@@ -1,0 +1,47 @@
+.section-main {
+
+  width: 90%;
+  margin: 0 auto;
+
+  nav {
+    background: rgba(255, 255, 255, 0.197);
+    @include grid4Col(1fr, 1fr, 0, 0);
+    color: whitesmoke;
+    height: 55px;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    @include grid4Col(1fr, 1fr, 1fr, 0);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+
+    li {
+      font-weight: 500;
+      letter-spacing: 2px;
+      @include flexCenterChild();
+      &:first-child {
+        background:  whitesmoke;
+        color: black;
+      }
+    }
+  }
+
+  .pictos {
+    padding: 15px 10px 10px 60%;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    @include grid4Col(1fr, 1fr, 1fr, 1fr);
+
+    li {
+      img {
+        height: 18px;
+      }
+    }
+
+  }
+
+}

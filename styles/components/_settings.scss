@@ -5,15 +5,15 @@
 
 $font-1: "font-1", serif;
 
-@mixin flexCenter {
+@mixin flexCenterChild {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin grid($col1, $col2,) {
+@mixin grid4Col($col1, $col2, $col3, $col4) {
   display: grid;
-  grid-template-columns: $col1 $col2;
+  grid-template-columns: $col1 $col2 $col3 $col4;
 }
 
 * {
@@ -23,7 +23,10 @@ $font-1: "font-1", serif;
 }
 
 body {
-  background: url(../../assets/img/bg.jpg) center/cover;
-  min-height: 100vh;
+  background: url(../../assets/img/bg.jpg) center/cover fixed;
   font-family: $font-1;
+}
+
+ul {
+  list-style: none;
 }
