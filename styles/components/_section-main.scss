@@ -50,7 +50,7 @@
     justify-content: end;
     text-align: center;
     @include grid4Col(1fr, 1fr, 1fr, 1fr);
-
+  
     li {
       img {
         height: 20px;
@@ -114,22 +114,6 @@
 
   .card-xl-img {
     margin: 50px 10%;
-  }
-
-  .btn {
-    background: none;
-    font-family: $font-2;
-    color: $color-black;
-    border: 2px solid $color-black;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
-    &:hover {
-      cursor: pointer;
-      color: $color-cyan;
-      border: none;
-      outline: 2px solid $color-darkcyan;
-    }
   }
 
   .card-xl-btn {

@@ -24,6 +24,23 @@ a {
   color: #333333;
 }
 
+.btn {
+  background: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  border: 2px solid #333333;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: cyan;
+  border: none;
+  outline: 2px solid darkcyan;
+}
+
 .header {
   margin: 25vh auto 5vh;
   height: 60vh;
@@ -215,23 +232,6 @@ a {
   margin: 50px 10%;
 }
 
-.section-main .btn {
-  background: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #333333;
-  border: 2px solid #333333;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.section-main .btn:hover {
-  cursor: pointer;
-  color: cyan;
-  border: none;
-  outline: 2px solid darkcyan;
-}
-
 .section-main .card-xl-btn {
   width: 250px;
   height: 65px;
@@ -313,5 +313,197 @@ a {
   height: 350px;
   margin: 10px 10% 50px;
   background: url(../../assets/img/pic03.jpg) center/cover;
+}
+
+footer {
+  margin: 20px auto 50px;
+  width: 90%;
+  color: #333333;
+  background: whitesmoke;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50% 0 0;
+      grid-template-columns: 50% 50% 0 0;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "form contact";
+}
+
+footer img {
+  fill: #8c8c8c;
+  stroke: #8c8c8c;
+}
+
+footer form label {
+  display: block;
+  height: 30px;
+  text-align: left;
+  color: #8c8c8c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px auto 5px;
+}
+
+footer form input {
+  height: 50px;
+  border: 1px solid rgba(179, 179, 179, 0.374);
+  width: 100%;
+  background: none;
+}
+
+footer form input[type=submit] {
+  height: 55px;
+  border: 2px solid #8c8c8c;
+  width: 200px;
+  background: none;
+  color: #8c8c8c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 30px auto 20px;
+}
+
+footer form textarea {
+  height: 200px;
+  border: 1px solid rgba(179, 179, 179, 0.374);
+  width: 100%;
+  background: none;
+  resize: none;
+}
+
+footer .contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0 0 0;
+      grid-template-columns: 1fr 0 0 0;
+  -ms-grid-rows: repeat 4, 1fr;
+      grid-template-rows: repeat 4, 1fr;
+      grid-template-areas: "address" "phone" "email" "social";
+}
+
+footer .contact-card {
+  border-bottom: 1px solid rgba(179, 179, 179, 0.374);
+  padding: 50px 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 0 0;
+      grid-template-columns: 20% 60% 0 0;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "title details";
+}
+
+footer .contact-card-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  text-align: center;
+  padding-left: 5%;
+  height: 30px;
+  color: #8c8c8c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer .contact-card-details,
+footer a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: details;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  text-align: center;
+  padding-right: 30%;
+  font-family: "font-1", serif;
+  color: #8c8c8c;
+  font-weight: 100;
+}
+
+footer ul {
+  width: 100%;
+}
+
+footer .pictos {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer .pictos li img {
+  height: 20px;
+  text-align: center;
+  margin: 2vh auto;
+}
+
+footer #form {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: form;
+  border-right: 1px solid rgba(179, 179, 179, 0.374);
+  padding: 30px 10% 30px;
+}
+
+footer #contact {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: contact;
+}
+
+footer #address {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: address;
+}
+
+footer #phone {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: phone;
+}
+
+footer #email {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+
+footer #social {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: social;
 }
 /*# sourceMappingURL=style.css.map */

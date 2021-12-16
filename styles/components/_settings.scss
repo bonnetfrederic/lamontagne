@@ -50,3 +50,20 @@ a {
   text-decoration: none;
   color: $color-black;
 }
+
+.btn {
+  background: none;
+  font-family: $font-2;
+  color: $color-black;
+  border: 2px solid $color-black;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  &:hover {
+    cursor: pointer;
+    color: $color-cyan;
+    border: none;
+    outline: 2px solid $color-darkcyan;
+  }
+}
+

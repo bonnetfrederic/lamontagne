@@ -1,0 +1,155 @@
+footer {
+  margin: 20px auto 50px;
+  width: 90%;
+  color: $color-black;
+  background: $color-white;
+  @include grid4Col(50%, 50%, 0, 0);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "form contact"
+    ;
+
+  img {
+    fill: $color-grey;
+    stroke: $color-grey;
+  }
+
+  form {
+    label {
+      display: block;
+      height: 30px;
+      text-align: left;
+      color: $color-grey;
+      font-family: $font-2;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 20px auto 5px;
+    }
+
+    input {
+      height: 50px;
+      border: 1px solid $color-grey-light;
+      width: 100%;
+      background: none;
+    }
+
+    input[type=submit] {
+      height: 55px;
+      border: 2px solid $color-grey;
+      width: 200px;
+      background: none;
+      color: $color-grey;
+      font-family: $font-2;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 30px auto 20px;
+    }
+
+    textarea {
+      height: 200px;
+      border: 1px solid $color-grey-light;
+      width: 100%;
+      background: none;
+      resize: none;
+    }
+  }
+
+  .contact {
+    @include grid4Col(1fr,0,0,0);
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-areas: 
+      "address"
+      "phone"
+      "email"
+      "social"
+    ;
+  }
+
+  .contact-card {
+    border-bottom: 1px solid $color-grey-light;
+    padding: 50px 50px;
+    @include grid4Col(20%, 60%, 0, 0);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "title details"
+    ;
+  }
+
+  .contact-card-title {
+    grid-area: title;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: center;
+    padding-left: 5%;
+    height: 30px;
+    color: $color-grey;
+    font-family: $font-2;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .contact-card-details,
+  a {
+    grid-area: details;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: center;
+    padding-right: 30%;
+    font-family: $font-1;
+    color: $color-grey;
+    font-weight: 100;
+
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  .pictos {
+    // padding: 15px 10px 10px 60%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    @include grid4Col(1fr, 1fr, 1fr, 1fr);
+  
+    li {
+      img {
+        height: 20px;
+        text-align: center;
+        margin: 2vh auto;
+      }
+    }
+}
+
+  #form {
+    grid-area: form;
+    border-right: 1px solid $color-grey-light;
+    padding: 30px 10% 30px;
+  }
+
+  #contact {
+    grid-area: contact;
+  }
+  #address {
+    grid-area: address;
+  }
+  #phone {
+    grid-area: phone;
+  }
+  #email {
+    grid-area: email;
+  }
+  #social {
+    grid-area: social;
+  }
+
+}
