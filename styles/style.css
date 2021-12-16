@@ -19,6 +19,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
 .header {
   margin: 25vh auto 5vh;
   height: 60vh;
@@ -67,6 +72,16 @@ ul {
   height: 10vh;
 }
 
+.section-main h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 4.5rem;
+  letter-spacing: 2px;
+  line-height: 80px;
+  margin-bottom: 50px;
+}
+
 .section-main .tabs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,9 +112,16 @@ ul {
           align-items: center;
 }
 
+.section-main .tabs li a {
+  color: whitesmoke;
+}
+
 .section-main .tabs li:first-child {
   background: whitesmoke;
-  color: #1d1d1d;
+}
+
+.section-main .tabs li:first-child a {
+  color: #333333;
 }
 
 .section-main .pictos {
@@ -129,14 +151,13 @@ ul {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1500px 500px;
-      grid-template-rows: 1500px 500px;
+  -ms-grid-rows: 1430px 952px;
+      grid-template-rows: 1430px 952px;
       grid-template-areas: "xl xl" "md1 md2";
 }
 
 .section-main .card-xl,
-.section-main .card-md1,
-.section-main .card-md2 {
+.section-main .card-md {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,83 +171,110 @@ ul {
   text-align: center;
 }
 
-.section-main .date-text {
+.section-main .card-xl-date-text {
   margin: 80px auto;
 }
 
-.section-main .date-text h5 {
-  color: #656565;
+.section-main .card-xl-date-text h5 {
+  color: #8c8c8c;
   font-weight: 100;
   position: relative;
+  font-size: 1.2rem;
 }
 
-.section-main .date-text h5:before {
+.section-main .card-xl-date-text h5:before {
   content: "";
   position: absolute;
   height: 1px;
-  width: 30%;
+  width: 28vw;
   background: rgba(179, 179, 179, 0.374);
   top: 50%;
-  left: 8%;
+  left: -32vw;
 }
 
-.section-main .date-text h5:after {
+.section-main .card-xl-date-text h5:after {
   content: "";
   position: absolute;
   height: 1px;
-  width: 30%;
+  width: 28vw;
   background: rgba(179, 179, 179, 0.374);
   top: 50%;
-  right: 8%;
+  right: -32vw;
 }
 
-.section-main h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
-  font-size: 3rem;
-  letter-spacing: 2px;
-  line-height: 50px;
-  margin-bottom: 50px;
-}
-
-.section-main .subtitle {
-  width: 50%;
+.section-main .card-xl-subtitle {
+  width: 40%;
   margin: 0 auto;
-  color: #656565;
-  font-size: 0.8rem;
+  color: #8c8c8c;
+  font-size: 1.2rem;
   font-weight: 100;
-  line-height: 30px;
+  line-height: 40px;
 }
 
-.section-main .headline-img {
+.section-main .card-xl-img {
   margin: 50px 10%;
-  height: 500px;
-  background: url(../../assets/img/pic01.jpg) center/cover;
 }
 
 .section-main .btn {
-  width: 150px;
-  height: 40px;
-  margin: 50px auto;
   background: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #1d1d1d;
-  border: 2px solid #1d1d1d;
+  color: #333333;
+  border: 2px solid #333333;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.section-main .card-md1-img {
-  margin: 50px 10%;
-  height: 500px;
-  background: url(../../assets/img/pic02.jpg) center/cover;
+.section-main .btn:hover {
+  cursor: pointer;
+  color: cyan;
+  border: none;
+  outline: 2px solid darkcyan;
 }
 
-.section-main .card-md2-img {
-  margin: 50px 10%;
-  height: 500px;
-  background: url(../../assets/img/pic03.jpg) center/cover;
+.section-main .card-xl-btn {
+  width: 250px;
+  height: 65px;
+  margin: 50px auto;
+  font-size: 1.2rem;
+}
+
+.section-main .card-md h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.section-main .card-md-date-text {
+  margin: 40px auto 20px;
+}
+
+.section-main .card-md-date-text h5 {
+  color: #8c8c8c;
+  font-weight: 100;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.section-main .card-md-subtitle {
+  width: 80%;
+  margin: 0 auto;
+  color: #8c8c8c;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 40px;
+  text-align: left;
+}
+
+.section-main .card-md-btn {
+  width: 170px;
+  height: 55px;
+  margin: 50px auto;
+  font-size: 0.9rem;
 }
 
 .section-main #g1 {
@@ -237,15 +285,33 @@ ul {
   border-bottom: 1px solid rgba(179, 179, 179, 0.374);
 }
 
+.section-main #g1-img {
+  height: 600px;
+  background: url(../../assets/img/pic01.jpg) center/cover;
+}
+
 .section-main #g2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: md1;
+  border-right: 1px solid rgba(179, 179, 179, 0.374);
+}
+
+.section-main #g2-img {
+  height: 350px;
+  margin: 10px 10% 50px;
+  background: url(../../assets/img/pic02.jpg) center/cover;
 }
 
 .section-main #g3 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: md2;
+}
+
+.section-main #g3-img {
+  height: 350px;
+  margin: 10px 10% 50px;
+  background: url(../../assets/img/pic03.jpg) center/cover;
 }
 /*# sourceMappingURL=style.css.map */
