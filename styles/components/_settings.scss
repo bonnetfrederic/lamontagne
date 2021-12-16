@@ -5,10 +5,25 @@
 
 $font-1: "font-1", serif;
 
-* {
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+@mixin grid($col1, $col2,) {
+  display: grid;
+  grid-template-columns: $col1 $col2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: red;
+  background: url(../../assets/img/bg.jpg) center/cover;
+  min-height: 100vh;
+  font-family: $font-1;
 }
