@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../../assets/fonts/Merriweather-Regular.ttf);
+}
+
+$font-1: "font-1", serif;
+
+* {
+
+}
+
+body {
+  background-color: red;
+}

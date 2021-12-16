@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../../assets/fonts/Merriweather-Regular.ttf);
+}
+
+body {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */
