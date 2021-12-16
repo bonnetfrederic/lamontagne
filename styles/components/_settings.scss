@@ -4,11 +4,24 @@
 }
 
 $font-1: "font-1", serif;
+$font-2: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+$color-white: whitesmoke;
+$color-black: rgb(29, 29, 29);
+$color-grey:  rgb(101, 101, 101);
+$color-grey-light: rgba(179, 179, 179, 0.374);
 
 @mixin flexCenterChild {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin flexColCenter() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 @mixin grid4Col($col1, $col2, $col3, $col4) {

@@ -6,25 +6,26 @@
   nav {
     background: rgba(255, 255, 255, 0.197);
     @include grid4Col(1fr, 1fr, 0, 0);
-    color: whitesmoke;
-    height: 55px;
+    color: $color-white;
+    height: 10vh;
   }
 
   .tabs {
     display: flex;
     justify-content: space-around;
-    text-align: center;
     @include grid4Col(1fr, 1fr, 1fr, 0);
-    text-transform: uppercase;
-    font-size: 0.6rem;
 
     li {
-      font-weight: 500;
+      text-align: center;
+      font-family: $font-2;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-weight: 700;
       letter-spacing: 2px;
       @include flexCenterChild();
       &:first-child {
         background:  whitesmoke;
-        color: black;
+        color: $color-black;
       }
     }
   }
@@ -38,10 +39,122 @@
 
     li {
       img {
-        height: 18px;
+        height: 20px;
+        text-align: center;
+        margin: 2vh auto;
       }
     }
 
   }
 
+  .headline {
+    background: whitesmoke;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1500px 500px;
+    grid-template-areas: 
+      "xl xl"
+      "md1 md2"
+    ;
+  }
+
+  .card-xl,
+  .card-md1,
+  .card-md2 {
+    @include flexColCenter();
+  }
+
+  .date-text {
+    margin: 80px auto;
+    h5 {
+      color: $color-grey;
+      font-weight: 100;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 30%;
+        background: $color-grey-light;
+        top: 50%;
+        left: 8%;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 30%;
+        background: $color-grey-light;
+        top: 50%;
+        right: 8%;
+      }
+    }
+
+  }
+
+  h1 {
+    font-family: $font-2;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+
+  .subtitle {
+    width: 50%;
+    margin: 0 auto;
+    color: $color-grey;
+    font-size: 0.8rem;
+    font-weight: 100;
+    line-height: 30px;
+  }
+
+  .headline-img {
+    margin: 50px 10%;
+    height: 500px;
+    background: url(../../assets/img/pic01.jpg) center/cover;
+  }
+
+  .btn {
+    width: 150px;
+    height: 40px;
+    margin: 50px auto;
+    background: none;
+    font-family: $font-2;
+    color: $color-black;
+    border: 2px solid $color-black;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .card-md1,
+  .card-md2 {
+    
+  }
+
+  .card-md1-img {
+    margin: 50px 10%;
+    height: 500px;
+    background: url(../../assets/img/pic02.jpg) center/cover;
+  }
+
+  .card-md2-img {
+    margin: 50px 10%;
+    height: 500px;
+    background: url(../../assets/img/pic03.jpg) center/cover;
+  }
+
+  #g1 {
+    grid-area: xl;
+    border-bottom: 1px solid $color-grey-light;
+  }
+  #g2 {
+    grid-area: md1;
+  }
+  #g3 {
+    grid-area: md2;
+  }
 }

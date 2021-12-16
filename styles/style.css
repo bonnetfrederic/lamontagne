@@ -20,12 +20,13 @@ ul {
 }
 
 .header {
-  margin-top: 180px;
+  margin: 25vh auto 5vh;
+  height: 60vh;
 }
 
 .header h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 4.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 5rem;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1rem;
@@ -35,8 +36,8 @@ ul {
 
 .header h2 {
   color: whitesmoke;
-  margin: 30px 10%;
-  font-size: 1rem;
+  margin: 30px 5%;
+  font-size: 1.4rem;
   font-weight: 100;
   text-align: center;
 }
@@ -45,7 +46,7 @@ ul {
   height: 30px;
   width: 30px;
   background: url(../../assets/icons/arrow-down.svg) center/cover;
-  margin: 50px auto;
+  margin: 50px auto 0;
   border-radius: 50%;
   border: 2px solid whitesmoke;
   padding: 30px;
@@ -63,7 +64,7 @@ ul {
   -ms-grid-columns: 1fr 1fr 0 0;
       grid-template-columns: 1fr 1fr 0 0;
   color: whitesmoke;
-  height: 55px;
+  height: 10vh;
 }
 
 .section-main .tabs {
@@ -72,17 +73,18 @@ ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-align: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 0;
       grid-template-columns: 1fr 1fr 1fr 0;
-  text-transform: uppercase;
-  font-size: 0.6rem;
 }
 
 .section-main .tabs li {
-  font-weight: 500;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
   letter-spacing: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,7 +99,7 @@ ul {
 
 .section-main .tabs li:first-child {
   background: whitesmoke;
-  color: black;
+  color: #1d1d1d;
 }
 
 .section-main .pictos {
@@ -116,6 +118,134 @@ ul {
 }
 
 .section-main .pictos li img {
-  height: 18px;
+  height: 20px;
+  text-align: center;
+  margin: 2vh auto;
+}
+
+.section-main .headline {
+  background: whitesmoke;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1500px 500px;
+      grid-template-rows: 1500px 500px;
+      grid-template-areas: "xl xl" "md1 md2";
+}
+
+.section-main .card-xl,
+.section-main .card-md1,
+.section-main .card-md2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.section-main .date-text {
+  margin: 80px auto;
+}
+
+.section-main .date-text h5 {
+  color: #656565;
+  font-weight: 100;
+  position: relative;
+}
+
+.section-main .date-text h5:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 30%;
+  background: rgba(179, 179, 179, 0.374);
+  top: 50%;
+  left: 8%;
+}
+
+.section-main .date-text h5:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 30%;
+  background: rgba(179, 179, 179, 0.374);
+  top: 50%;
+  right: 8%;
+}
+
+.section-main h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.section-main .subtitle {
+  width: 50%;
+  margin: 0 auto;
+  color: #656565;
+  font-size: 0.8rem;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.section-main .headline-img {
+  margin: 50px 10%;
+  height: 500px;
+  background: url(../../assets/img/pic01.jpg) center/cover;
+}
+
+.section-main .btn {
+  width: 150px;
+  height: 40px;
+  margin: 50px auto;
+  background: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d1d1d;
+  border: 2px solid #1d1d1d;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section-main .card-md1-img {
+  margin: 50px 10%;
+  height: 500px;
+  background: url(../../assets/img/pic02.jpg) center/cover;
+}
+
+.section-main .card-md2-img {
+  margin: 50px 10%;
+  height: 500px;
+  background: url(../../assets/img/pic03.jpg) center/cover;
+}
+
+.section-main #g1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: xl;
+  border-bottom: 1px solid rgba(179, 179, 179, 0.374);
+}
+
+.section-main #g2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: md1;
+}
+
+.section-main #g3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: md2;
 }
 /*# sourceMappingURL=style.css.map */
