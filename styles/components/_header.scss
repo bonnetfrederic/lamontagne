@@ -1,10 +1,11 @@
 .header {
-  // margin-top: 180px;
   margin: 25vh auto 5vh;
   height: 60vh;
+
   @media screen and (max-width: 720px) {
     height: 40vh;
   }
+
   h1 {
     font-family: $font-2;
     font-size: 5rem;

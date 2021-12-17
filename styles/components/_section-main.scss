@@ -7,7 +7,7 @@
     @include grid4Col(1fr, 1fr, 0, 0);
     color: $color-white;
     height: 10vh;
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 1000px) {
       display: none;
     }
   }
@@ -44,6 +44,13 @@
     justify-content: space-around;
     @include grid4Col(1fr, 1fr, 1fr, 0);
 
+    &:hover li:not(:hover) {
+      background: none;
+      a {
+        color: $color-white;
+      }
+    }
+
     li {
       a {
         color: $color-white;
@@ -61,6 +68,13 @@
           color: $color-black;
         }
       }
+      &:hover {
+        background: $color-white;
+        a {
+          color: $color-black;
+        } 
+      }
+      
     }
   }
 
@@ -76,6 +90,10 @@
         height: 20px;
         text-align: center;
         margin: 2vh auto;
+      }
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
       }
     }
   }

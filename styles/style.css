@@ -126,7 +126,7 @@ a {
   height: 10vh;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1000px) {
   .section-main nav {
     display: none;
   }
@@ -180,6 +180,14 @@ a {
       grid-template-columns: 1fr 1fr 1fr 0;
 }
 
+.section-main .tabs:hover li:not(:hover) {
+  background: none;
+}
+
+.section-main .tabs:hover li:not(:hover) a {
+  color: whitesmoke;
+}
+
 .section-main .tabs li {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -210,6 +218,14 @@ a {
   color: #333333;
 }
 
+.section-main .tabs li:hover {
+  background: whitesmoke;
+}
+
+.section-main .tabs li:hover a {
+  color: #333333;
+}
+
 .section-main .pictos {
   padding: 15px 10px 10px 60%;
   display: -webkit-box;
@@ -229,6 +245,12 @@ a {
   height: 20px;
   text-align: center;
   margin: 2vh auto;
+}
+
+.section-main .pictos li:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .section-main .headline {
@@ -529,8 +551,8 @@ footer {
     display: grid;
     -ms-grid-columns: 1fr 0 0 0;
         grid-template-columns: 1fr 0 0 0;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 550px 500px;
+        grid-template-rows: 550px 500px;
         grid-template-areas: "form" "contact";
   }
 }
@@ -553,11 +575,24 @@ footer form label {
   margin: 20px auto 5px;
 }
 
+@media screen and (max-width: 1000px) {
+  footer form label {
+    height: 20px;
+    font-size: 0.9rem;
+  }
+}
+
 footer form input {
   height: 50px;
   border: 1px solid rgba(179, 179, 179, 0.374);
   width: 100%;
   background: none;
+}
+
+@media screen and (max-width: 1000px) {
+  footer form input {
+    height: 35px;
+  }
 }
 
 footer form input[type=submit] {
@@ -574,12 +609,27 @@ footer form input[type=submit] {
   margin: 30px auto 20px;
 }
 
+@media screen and (max-width: 1000px) {
+  footer form input[type=submit] {
+    height: 45px;
+    width: 160px;
+    font-size: 0.9rem;
+    margin: 30px auto 20px;
+  }
+}
+
 footer form textarea {
   height: 200px;
   border: 1px solid rgba(179, 179, 179, 0.374);
   width: 100%;
   background: none;
   resize: none;
+}
+
+@media screen and (max-width: 1000px) {
+  footer form textarea {
+    height: 150px;
+  }
 }
 
 footer .contact {
@@ -594,8 +644,9 @@ footer .contact {
 
 @media screen and (max-width: 1000px) {
   footer .contact {
-    -ms-grid-rows: repeat 4, 80px;
-        grid-template-rows: repeat 4, 80px;
+    -ms-grid-rows: repeat 4, 100px;
+        grid-template-rows: repeat 4, 100px;
+    height: 500px;
   }
 }
 
@@ -614,9 +665,7 @@ footer .contact-card {
 @media screen and (max-width: 1000px) {
   footer .contact-card {
     padding: 20px 50px;
-    height: 150px;
-    border-bottom: 1px solid rgba(179, 179, 179, 0.374);
-    border-top: 1px solid rgba(179, 179, 179, 0.374);
+    height: 100px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 30% 70% 0 0;
@@ -696,6 +745,12 @@ footer .pictos li img {
   margin: 2vh auto;
 }
 
+footer .pictos li:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 footer #form {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -716,6 +771,12 @@ footer #address {
   grid-area: address;
 }
 
+@media screen and (max-width: 1000px) {
+  footer #address {
+    border-top: 1px solid rgba(179, 179, 179, 0.374);
+  }
+}
+
 footer #phone {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -734,6 +795,13 @@ footer #social {
   grid-area: social;
 }
 
+@media screen and (max-width: 1000px) {
+  footer #social {
+    border-bottom: none;
+    padding: 0 50px;
+  }
+}
+
 @media screen and (max-width: 1110px) {
   footer #address-details {
     padding-right: 0;
@@ -745,6 +813,25 @@ footer #social {
     width: 100%;
     text-align: left;
   }
+}
+
+footer #phone-details p {
+  cursor: pointer;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  -webkit-text-decoration-color: rgba(179, 179, 179, 0.374);
+          text-decoration-color: rgba(179, 179, 179, 0.374);
+}
+
+footer #email-details a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  -webkit-text-decoration-color: rgba(179, 179, 179, 0.374);
+          text-decoration-color: rgba(179, 179, 179, 0.374);
 }
 
 footer #social-title {
