@@ -67,7 +67,7 @@ a {
 .header .logo {
   height: 30px;
   width: 30px;
-  background: url(../../assets/icons/arrow-down.svg) center/cover;
+  background: url(./../assets/icons/arrow-down.svg) center/cover;
   margin: 50px auto 0;
   border-radius: 50%;
   border: 2px solid whitesmoke;
@@ -287,7 +287,7 @@ a {
 
 .section-main #g1-img {
   height: 600px;
-  background: url(../../assets/img/pic01.jpg) center/cover;
+  background: url(./../assets/img/pic01.jpg) center/cover;
 }
 
 .section-main #g2 {
@@ -300,7 +300,7 @@ a {
 .section-main #g2-img {
   height: 350px;
   margin: 10px 10% 50px;
-  background: url(../../assets/img/pic02.jpg) center/cover;
+  background: url(./../assets/img/pic02.jpg) center/cover;
 }
 
 .section-main #g3 {
@@ -312,7 +312,7 @@ a {
 .section-main #g3-img {
   height: 350px;
   margin: 10px 10% 50px;
-  background: url(../../assets/img/pic03.jpg) center/cover;
+  background: url(./../assets/img/pic03.jpg) center/cover;
 }
 
 footer {

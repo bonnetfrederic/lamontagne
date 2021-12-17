@@ -168,7 +168,7 @@
   }
   #g1-img {
     height: 600px;
-    background: url(../../assets/img/pic01.jpg) center/cover;
+    background: url(./../assets/img/pic01.jpg) center/cover;
   }
   #g2 {
     grid-area: md1;
@@ -177,7 +177,7 @@
   #g2-img {
     height: 350px;
     margin: 10px 10% 50px;
-    background: url(../../assets/img/pic02.jpg) center/cover;
+    background: url(./../assets/img/pic02.jpg) center/cover;
   }
   #g3 {
     grid-area: md2;
@@ -185,6 +185,6 @@
   #g3-img {
     height: 350px;
     margin: 10px 10% 50px;
-    background: url(../../assets/img/pic03.jpg) center/cover;
+    background: url(./../assets/img/pic03.jpg) center/cover;
   }
 }
