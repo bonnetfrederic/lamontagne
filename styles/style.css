@@ -11,7 +11,7 @@
 }
 
 body {
-  background: url(../../assets/img/bg.jpg) center/cover fixed;
+  background: url(./../assets/img/bg.jpg) center/cover fixed;
   font-family: "font-1", serif;
 }
 
@@ -391,8 +391,8 @@ footer .contact-card {
   padding: 50px 50px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 60% 0 0;
-      grid-template-columns: 20% 60% 0 0;
+  -ms-grid-columns: 20% 80% 0 0;
+      grid-template-columns: 20% 80% 0 0;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: "title details";
@@ -409,9 +409,9 @@ footer .contact-card-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   text-align: center;
   padding-left: 5%;
   height: 30px;
@@ -421,6 +421,7 @@ footer .contact-card-title {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: 5px;
 }
 
 footer .contact-card-details,
@@ -435,11 +436,11 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   text-align: center;
-  padding-right: 30%;
+  padding: 5px 20% 0 10px;
   font-family: "font-1", serif;
   color: #8c8c8c;
   font-weight: 100;
@@ -505,5 +506,30 @@ footer #social {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: social;
+}
+
+footer #social-title {
+  margin-top: 30px;
+}
+
+footer #social-details li img {
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(179, 179, 179, 0.374);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+footer #email-details {
+  padding: 0 20% 0 10px;
 }
 /*# sourceMappingURL=style.css.map */

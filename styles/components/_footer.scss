@@ -72,7 +72,7 @@ footer {
   .contact-card {
     border-bottom: 1px solid $color-grey-light;
     padding: 50px 50px;
-    @include grid4Col(20%, 60%, 0, 0);
+    @include grid4Col(20%, 80%, 0, 0);
     grid-template-rows: 1fr;
     grid-template-areas: 
       "title details"
@@ -83,7 +83,7 @@ footer {
     grid-area: title;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: left;
     text-align: center;
     padding-left: 5%;
     height: 30px;
@@ -93,6 +93,7 @@ footer {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: 5px;
   }
 
   .contact-card-details,
@@ -100,13 +101,12 @@ footer {
     grid-area: details;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content:left;
     text-align: center;
-    padding-right: 30%;
+    padding: 5px 20% 0 10px;
     font-family: $font-1;
     color: $color-grey;
     font-weight: 100;
-
   }
 
   ul {
@@ -151,5 +151,24 @@ footer {
   #social {
     grid-area: social;
   }
-
+  #social-title {
+    margin-top: 30px;
+  }
+  #social-details {
+    li {
+      img {
+        height: 40px;
+        width: 40px;
+        border: 1px solid $color-grey-light;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+    }
+  }
+  #email-details {
+    padding: 0 20% 0 10px;
+  }
 }
