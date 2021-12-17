@@ -8,6 +8,14 @@ footer {
     grid-template-areas: 
       "form contact"
     ;
+  @media screen and (max-width: 1000px) {
+    @include grid4Col(1fr, 0, 0, 0);
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+        "form"
+        "contact"
+      ;
+  }
 
   img {
     fill: $color-grey;
@@ -67,6 +75,9 @@ footer {
       "email"
       "social"
     ;
+    @media screen and (max-width: 1000px) {
+      grid-template-rows: repeat (4, 80px);
+    }
   }
 
   .contact-card {
@@ -77,6 +88,13 @@ footer {
     grid-template-areas: 
       "title details"
     ;
+    @media screen and (max-width: 1000px) {
+      padding: 20px 50px;
+      height: 150px;
+      border-bottom: 1px solid $color-grey-light;
+      border-top: 1px solid $color-grey-light;
+      @include grid4Col(30%, 70%, 0, 0);
+    }
   }
 
   .contact-card-title {
@@ -151,10 +169,25 @@ footer {
   #social {
     grid-area: social;
   }
+  #address-details {
+    @media screen and (max-width: 1110px) {
+      padding-right: 0;
+    }
+    p {
+      @media screen and (max-width: 1110px) {
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
   #social-title {
     margin-top: 30px;
   }
   #social-details {
+    padding-right: 40%;
+    @media screen and(max-width: 800px) {
+      padding-right: 0;
+    }
     li {
       img {
         height: 40px;
