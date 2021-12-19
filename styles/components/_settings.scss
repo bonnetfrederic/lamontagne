@@ -40,6 +40,24 @@ $color-darkcyan: darkcyan;
 body {
   background: url(./../assets/img/bg.jpg) center/cover fixed;
   font-family: $font-1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #1e252d;
+    animation: animBefore 1.5s ease forwards;
+    animation-delay: 0.3s;
+
+    @keyframes animBefore {
+      to {
+        opacity: 0;
+      }
+    }
+  }
 }
 
 ul {
