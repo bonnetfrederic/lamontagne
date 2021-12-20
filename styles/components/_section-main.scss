@@ -108,16 +108,14 @@
     background: whitesmoke;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1430px 952px;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "xl xl"
       "md1 md2";
-    @media screen and (max-width: 1000px) {
-      grid-template-rows: 900px 952px;
-    }
     @media screen and (max-width: 800px) {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 900px);
+      grid-template-rows: repeat(3, 1fr);
+
       grid-template-areas:
         "xl"
         "md1"
@@ -193,13 +191,6 @@
     }
   }
 
-  .card-xl-img {
-    margin: 50px 10%;
-    @media screen and (max-width: 1000px) {
-      margin: 30px 10%;
-    }
-  }
-
   .card-xl-btn {
     width: 250px;
     height: 65px;
@@ -271,33 +262,41 @@
     border-bottom: 1px solid $color-grey-light;
   }
 
-  #g1-img {
-    height: 600px;
-    background: url(./../assets/img/pic01.jpg) center/cover;
-    &:hover {
-      animation: growXlImage 0.5s ease-in-out forwards;
+  #g1-img-container {
+    width: 75vw;
+    height: 400px;
+    margin: 50px auto 5%;
+    overflow: hidden;
+    div {
+      background: url(./../assets/img/pic01.jpg) center/cover;
+      // object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s ease;
     }
-    @keyframes growXlImage {
-      100% {
-        background-size: 110%;
-      }
-    }
-    @media screen and (max-width: 1000px) {
-      height: 350px;
+    div:hover {
+      transform: scale(1.2);
     }
   }
 
-  #g2-img,
-  #g3-img {
+  #g2-img-container,
+  #g3-img-container {
+    width: 35vw;
     height: 350px;
-    margin: 10px 10% 50px;
-    &:hover {
-      animation: growMdImage 0.5s ease-in-out forwards;
+    margin: 50px auto 5%;
+    overflow: hidden;
+    div {
+      // object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s ease;
     }
-    @keyframes growMdImage {
-      100% {
-        background-size: 140%;
-      }
+    div:hover {
+      transform: scale(1.2);
+    }
+    @media screen and (max-width: 800px) {
+      width: 75vw;
+      margin: 20px auto 5%;
     }
   }
 
