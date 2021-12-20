@@ -2,9 +2,13 @@
   font-family: "font-1";
   src: url(../../assets/fonts/Merriweather-Regular.ttf);
 }
+@font-face {
+  font-family: "font-2";
+  src: url(../../assets/fonts/MerriweatherSans-Regular.ttf);
+}
 
 $font-1: "font-1", serif;
-$font-2: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-2: "font-2", sans-serif;
 
 $color-white: whitesmoke;
 $color-black: rgb(51, 51, 51);
