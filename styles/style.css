@@ -67,6 +67,51 @@ a {
   outline: 2px solid darkcyan;
 }
 
+.btn-primary {
+  display: none !important;
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: none !important;
+  border: none !important;
+  background: url(../../assets/icons/burger.svg) right/cover !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 0.25rem;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.btn-primary:hover {
+  outline: none !important;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
+  .btn-primary {
+    display: block !important;
+  }
+}
+
+.offcanvas-body a {
+  text-decoration: none !important;
+  color: #8c8c8c !important;
+}
+
+.offcanvas-body a:hover {
+  color: #333333 !important;
+  font-size: 1.4rem !important;
+}
+
+.offcanvas-body a:visited, .offcanvas-body a:active, .offcanvas-body a:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
 .header {
   margin: 25vh auto 5vh;
   height: 60vh;
@@ -216,6 +261,7 @@ a {
 }
 
 .section-main .tabs {
+  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

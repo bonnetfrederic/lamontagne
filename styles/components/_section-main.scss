@@ -40,6 +40,7 @@
   }
 
   .tabs {
+    padding-left: 0;
     display: flex;
     justify-content: space-around;
     @include grid4Col(1fr, 1fr, 1fr, 0);
