@@ -69,6 +69,7 @@
     @media screen and (max-width: 720px) {
       display: none;
     }
+    transition: 0.5s ease;
     &:hover {
       cursor: pointer;
       transform: scale(1.2);

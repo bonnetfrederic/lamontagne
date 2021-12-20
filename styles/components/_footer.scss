@@ -4,17 +4,14 @@ footer {
   color: $color-black;
   background: $color-white;
   @include grid4Col(50%, 50%, 0, 0);
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-      "form contact"
-    ;
+  grid-template-rows: 1fr;
+  grid-template-areas: "form contact";
   @media screen and (max-width: 1000px) {
     @include grid4Col(1fr, 0, 0, 0);
-      grid-template-rows: 550px 500px;
-      grid-template-areas: 
-        "form"
-        "contact"
-      ;
+    grid-template-rows: 550px 500px;
+    grid-template-areas:
+      "form"
+      "contact";
   }
 
   img {
@@ -50,7 +47,7 @@ footer {
       }
     }
 
-    input[type=submit] {
+    input[type="submit"] {
       height: 55px;
       border: 2px solid $color-grey;
       width: 200px;
@@ -83,14 +80,13 @@ footer {
   }
 
   .contact {
-    @include grid4Col(1fr,0,0,0);
+    @include grid4Col(1fr, 0, 0, 0);
     grid-template-rows: repeat (4, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
       "address"
       "phone"
       "email"
-      "social"
-    ;
+      "social";
     @media screen and (max-width: 1000px) {
       grid-template-rows: repeat (4, 100px);
       height: 500px;
@@ -102,9 +98,7 @@ footer {
     padding: 50px 50px;
     @include grid4Col(20%, 80%, 0, 0);
     grid-template-rows: 1fr;
-    grid-template-areas: 
-      "title details"
-    ;
+    grid-template-areas: "title details";
     @media screen and (max-width: 1000px) {
       padding: 20px 50px;
       height: 100px;
@@ -142,7 +136,7 @@ footer {
     grid-area: details;
     display: flex;
     flex-direction: row;
-    justify-content:left;
+    justify-content: left;
     text-align: center;
     padding: 5px 20% 0 10px;
     font-family: $font-1;
@@ -173,26 +167,21 @@ footer {
     justify-content: space-around;
     text-align: center;
     @include grid4Col(1fr, 1fr, 1fr, 1fr);
-  
+
     li {
       img {
         height: 20px;
         text-align: center;
         margin: 2vh auto;
       }
+      transition: 0.5s ease;
       &:hover {
         cursor: pointer;
-        transform: scale(1.2);
+        transform: scale(1.5);
+        margin: 5% 10px;
       }
     }
-
-    // @media screen and (max-width: 500px) {
-    //   padding: 20px 20px;
-    //   height: 120px;
-    //   @include grid4Col(30%, 70%, 0, 0);
-    // }
-
-}
+  }
 
   #form {
     grid-area: form;

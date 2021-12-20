@@ -12,7 +12,7 @@ $font-2: "font-2", sans-serif;
 
 $color-white: whitesmoke;
 $color-black: rgb(51, 51, 51);
-$color-grey:  rgb(140, 140, 140);
+$color-grey: rgb(140, 140, 140);
 $color-grey-light: rgba(179, 179, 179, 0.374);
 $color-cyan: cyan;
 $color-darkcyan: darkcyan;
@@ -122,7 +122,9 @@ a {
       color: $color-black !important;
       font-size: 1.4rem !important;
     }
-    &:visited, &:active, &:focus {
+    &:visited,
+    &:active,
+    &:focus {
       outline: none !important;
       border: none !important;
       transition: none !important;
